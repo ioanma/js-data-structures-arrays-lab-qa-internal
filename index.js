@@ -18,8 +18,8 @@ function destructivelyRemoveFirstDriver(name) {
 }
 
 function appendDriver(name) {
-  drivers.push(name);
-  return drivers.slice();
+  const newDrivers = drivers.slice();
+  return newDrivers.push(name);
 }
 
 function prependDriver(name) {
